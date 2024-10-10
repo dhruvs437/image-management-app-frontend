@@ -1,0 +1,45 @@
+/* src/components/image/ImageList.css */
+
+.image-gallery {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+  }
+  
+  .image-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .image-container {
+    width: 100%;         /* Ensure it takes the full width of the card */
+    height: 250px;      /* Increased height for the image container */
+    overflow: hidden;    /* Hide overflow for images that exceed the container */
+    display: flex;       /* Center the image */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  .image {
+    max-width: 100%;   /* Make sure the image fits within the container */
+    max-height: 100%;  /* Prevent the image from exceeding the container height */
+    object-fit: cover;  /* Maintain aspect ratio and fill the container */
+  }
+  
+  .image-details {
+    padding: 10px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    color: #333; /* Dark text for better visibility */
+  }
+  
+  .upload-date {
+    margin: 0; /* Remove margin for better spacing */
+    font-weight: bold; /* Optional: make the date text bold */
+  }
+  
